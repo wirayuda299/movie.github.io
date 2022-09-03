@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>wd movies</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+  </head>
+  <body class='bg-dark'>
+    <nav class="navbar shadow bg-dark">
+      <div class="navbar-brand">
+        <h1 class="text-white fs-1 ps-5">WD Movies</h1>
+
+      </div>
+    </nav>
+    <div class="container-fluid">
+
+      <div class="container mb-3 m-5">
+        <div class="conatiner d-flex justify-content-center">
+          <input
+            type="search"
+            id="movieInput"
+            class="form-control rounded-0 py-2"
+            placeholder="Search your favorite movies.."
+            aria-label="btn"
+            aria-describedby="btn"
+          />
+          <span class="btn btn-danger btn-lg rounded-0" id="btn">Search</span>
+
+        </div>
+        <p class="text-white" id="alert"></p>
+      </div>
+
+      <div class="row" id="movieContainer"></div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">User Rating</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="rate"></div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="./js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
